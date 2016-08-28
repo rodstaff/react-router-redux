@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './jsrc/main.js',
+  entry: './jsrc/theOne.js',
   // output: {
   // path: './rod.html',
   // filename: 'bundle.js'
