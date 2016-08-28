@@ -1,14 +1,14 @@
 module.exports = {
   entry: './jsrc/theOne.js',
   // output: {
-  // path: './rod.html',
-  // filename: 'bundle.js'
+  // path: './indexT.html'
+  // // filename: 'bundle.js'
   // },
   devServer: {
     inline: true,
     publicPath: '/',
     filename: 'bundle.js',
-  //  contentBase: './jsrc',
+    //contentBase: './indexT.html',
     port: 8087
   },
   module: {

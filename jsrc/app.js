@@ -22,11 +22,11 @@ export default class App extends Component {
   }
 }
 const aTitle = () => (
-  <h1>Hello from Title Component</h1>
+  <h1>testing:  Title Component</h1>
 )
 
 const aSubTitle = () => (
-  <h1>Hello from SubTitle Component</h1>
+  <h1>testing:  SubTitle Component</h1>
 )
 
 const NamedComponents = (props) => (
