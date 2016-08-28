@@ -11,8 +11,8 @@ export default class App extends Component {
             <IndexRoute component={TwitterFeed} />
             <Route path='instagram' component={Instagram} />
           </Route>
-          <Route path='/about' component={About} />
-          <Route path='/namedComponent' component={NamedComponents}>
+          <Route path='/about(/:name)' component={About} />
+          <Route path='/namedComponent' component={NamedComponents} >
             <IndexRoute components={{ title: aTitle, subTitle: aSubTitle }} />
           </Route>
           <Route path='*' component={NotFound} />
@@ -22,7 +22,7 @@ export default class App extends Component {
   }
 }
 const aTitle = () => (
-  <h1>testing:  Title Component</h1>
+  <h1>testing: Title Component</h1>
 )
 
 const aSubTitle = () => (
@@ -80,7 +80,12 @@ const Address = (props) => <div>
 
 const Instagram = () => <h3>Instagram Feed</h3>
 const TwitterFeed = () => <h3>Twitter Feed</h3>
-const About = () => <h1>Welcome to the About Page</h1>
+const About = (props) => (
+  <div>
+    <h1>Welcome to the About Page</h1>
+    {props.params.name && <h2>Hi there, {props.params.name}!</h2>}
+  </div>
+)
 const NotFound = () => <h1>404: This page is not found!</h1>
 
 // export default App // -> this has the same effect as 'export default class App...' above!
