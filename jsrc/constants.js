@@ -1,21 +1,7 @@
 import React from 'react'
 import {Router, Route, Link, IndexLink, IndexRoute, hashHistory, browserHistory, DefaultRoute} from 'react-router'
-//    return (
-// const Nav = () => (
-//   <div>
-//     <IndexLink activeStyle={{color:'#53acff'}} to='/'>Home</IndexLink>&nbsp;
-//     <IndexLink activeStyle={{color:'#53acff'}} to='/address'>Address</IndexLink>&nbsp;
-//     <IndexLink activeStyle={{color:'#53acff'}} to='/about'>About</IndexLink>
-//   </div>
-// )
 
-// const Nav = () => (
-//   <div>
-//     <Link to='/'>Home</Link>&nbsp;
-//     <Link to='/address'>Address</Link>
-//   </div>
-// )
-//<div>
+// see variant of 'const Container' at the end below
 export const Container = (props) => (
   <div>
     <Nav /> 
@@ -87,3 +73,19 @@ export const NotFound = () => (
 )
 
 // export default App // -> this has the same effect as 'export default class App...' above!
+//    return (
+// const Nav = () => (
+//   <div>
+//     <IndexLink activeStyle={{color:'#53acff'}} to='/'>Home</IndexLink>&nbsp;
+//     <IndexLink activeStyle={{color:'#53acff'}} to='/address'>Address</IndexLink>&nbsp;
+//     <IndexLink activeStyle={{color:'#53acff'}} to='/about'>About</IndexLink>
+//   </div>
+// )
+
+// const Nav = () => (
+//   <div>
+//     <Link to='/'>Home</Link>&nbsp;
+//     <Link to='/address'>Address</Link>
+//   </div>
+// )
+//<div>
