@@ -8,3 +8,8 @@ This tutorial is in principle very helpful to understand React Routing.  However
 
 Please take look and enjoy coding!
 
+My notes:
+
+index.html:  <script type="text/javascript" src="bundle.js"></script> 
+  mystery:  removal of ' type="text/javascript" ' causes error?
+
