@@ -1,6 +1,6 @@
 import React from 'react'
 import {Router, Route, Link, IndexLink, IndexRoute, hashHistory, browserHistory, DefaultRoute} from 'react-router'
-import {Container, Home, Address, About, NotFound} from './constants'
+import {Container, Home, User, Tweets, NotFound} from './constants'
 import {syncHistoryWithStore, routerReducer} from 'react-router-redux'
 import store from '../dev/js/store'
 
@@ -14,8 +14,8 @@ export default class App extends React.Component {
         <Route path='/' component={Container}>
 
           <IndexRoute component={Home} />
-          <Route path='address' component={Address} />  
-          <Route path='/about(/:name)' component={About} />
+          <Route path='user' component={User} />  
+          <Route path='/tweets(/:name)' component={Tweets} />
           <Route path='*' component={NotFound} />
 
         </Route>
