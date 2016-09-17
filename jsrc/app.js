@@ -1,7 +1,7 @@
 import React from 'react'
 import {Router, Route, Link, IndexLink, IndexRoute, hashHistory, browserHistory, DefaultRoute} from 'react-router'
 import {Container, Home, Address, About, NotFound} from './constants'
-import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
+import {syncHistoryWithStore, routerReducer} from 'react-router-redux'
 import store from '../dev/js/store'
 
 const history = syncHistoryWithStore(browserHistory, store)

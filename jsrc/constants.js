@@ -2,6 +2,7 @@ import React from 'react'
 import {Router, Route, Link, IndexLink, IndexRoute, hashHistory, browserHistory, DefaultRoute} from 'react-router'
 
 import Root from '../dev/js/components/root'
+import store from '../dev/js/store'
 
 // see variant of 'const Container' at the end below
 export const Container = (props) => (
@@ -24,6 +25,7 @@ export const Home = () => (
 export const Address = () => (
   <div>
     <br />
+    <Root store={store} />
     <h1>Hello Hello!</h1>
   </div>
 )
