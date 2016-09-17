@@ -5,5 +5,5 @@ import Root from './components/root'
 
 ReactDOM.render(
   <Root store={store} />,
-  document.getElementById('myApp')
+  document.getElementById('myMan')
 );

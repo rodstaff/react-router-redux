@@ -1,6 +1,8 @@
 import React from 'react'
 import {Router, Route, Link, IndexLink, IndexRoute, hashHistory, browserHistory, DefaultRoute} from 'react-router'
 
+import Root from '../dev/js/components/root'
+
 // see variant of 'const Container' at the end below
 export const Container = (props) => (
   <div>
@@ -19,12 +21,10 @@ export const Nav = () => (
 export const Home = () => (
   <h1>Home Sweet Home!</h1>
 )
-export const Address = (props) => (
+export const Address = () => (
   <div>
     <br />
     <h1>Hello Hello!</h1>
-    <h2>We are located at 234 5th Avenue, New York, NY, USA.</h2>
-      {props.children}
   </div>
 )
 export const About = (props) => (

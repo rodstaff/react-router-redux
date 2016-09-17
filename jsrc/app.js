@@ -8,10 +8,12 @@ export default class App extends React.Component {
     return (
       <Router history={browserHistory}>
         <Route path='/' component={Container}>
+
           <IndexRoute component={Home} />
           <Route path='address' component={Address} />  
           <Route path='/about(/:name)' component={About} />
           <Route path='*' component={NotFound} />
+
         </Route>
       </Router>
     )
