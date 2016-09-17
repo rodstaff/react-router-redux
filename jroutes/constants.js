@@ -12,7 +12,7 @@ export const Container = (props) => (
     {props.children}
   </div>
 )
-export const Nav = () => (
+const Nav = () => (
   <div>
     <IndexLink activeClassName='active' to='/'>Home</IndexLink>&nbsp;&nbsp;
     <IndexLink activeClassName='active' to='/user'>User</IndexLink>&nbsp;&nbsp;

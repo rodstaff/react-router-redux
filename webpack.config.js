@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 module.exports = {
-  entry: './jsrc/theOne.js',
+  entry: './jroutes/theOne.js',
   //entry: './dev/js/client.js',
   // output: {
   // path: ''
