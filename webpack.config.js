@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 module.exports = {
   entry: './jsrc/theOne.js',
   // output: {
@@ -16,8 +17,22 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015', 'stage-0'],
+          plugins: [
+            'react-html-attrs', 
+            'transform-class-properties', 
+            'transform-decorators-legacy', 
+            'transform-object-rest-spread'
+          ]
+        }
       }
     ]
-  }
+  },
+  plugins: [
+  new webpack.optimize.DedupePlugin(),
+  new webpack.optimize.OccurrenceOrderPlugin()
+  //new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+  ]
 }
