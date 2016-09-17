@@ -13,12 +13,7 @@ export const Nav = () => (
     <IndexLink activeClassName='active' to='/'>Home</IndexLink>&nbsp;&nbsp;
     <IndexLink activeClassName='active' to='/address'>Address</IndexLink>&nbsp;&nbsp;
     <IndexLink activeClassName='active' to='/about'>About</IndexLink>&nbsp;&nbsp;
-    <IndexLink activeClassName='active' to='/namedComponent'>Named Components</IndexLink>&nbsp;&nbsp;
-    <IndexLink activeClassName='active' 
-      to={{
-        pathname: '/address/query',
-        query: {message: 'Hello from Route Query'}
-      }}>Route Query</IndexLink>
+
   </div>
 )
 export const Home = () => (
