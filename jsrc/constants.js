@@ -11,7 +11,7 @@ export const Container = (props) => (
 export const Nav = () => (
   <div>
     <IndexLink activeClassName='active' to='/'>Home</IndexLink>&nbsp;&nbsp;
-    <IndexLink activeClassName='active' to='/address'>Address</IndexLink>&nbsp;&nbsp;
+    <IndexLink activeClassName='active' to='/address'>Ancient Mystery</IndexLink>&nbsp;&nbsp;
     <IndexLink activeClassName='active' to='/about'>About</IndexLink>&nbsp;&nbsp;
 
   </div>
@@ -23,7 +23,7 @@ export const Address = (props) => (
   <div>
     <br />
     <h1>Hello Hello!</h1>
-    <h1>We are located at 234 5th Avenue, New York, NY, USA.</h1>
+    <h2>We are located at 234 5th Avenue, New York, NY, USA.</h2>
       {props.children}
   </div>
 )
