@@ -20,7 +20,8 @@ export default class Layout extends React.Component {
     console.log(this.props);
   	return ( 
   	  <div>
-        <h3>Ninja turtle {this.props.initialUser[0]} sent a tweet: "{this.props.tweet[2]}"</h3>
+        <h2>Ninja turtle {this.props.initialUser[1]} sent a tweet:</h2>
+        <h3>"{this.props.tweet[1]}"</h3>
       </div>
   	);
   }

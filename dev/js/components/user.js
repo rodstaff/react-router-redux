@@ -14,13 +14,16 @@ import {fetchUser, setUserName, setUserAge} from '../actions/userActions'
 
 export default class Layout extends React.Component {
   componentWillMount() {
-    this.props.dispatch(fetchUser())
+    this.props.dispatch(fetchUser());
+    this.props.dispatch(setUserName("Julius Caesar"));
+    this.props.dispatch(setUserAge(2116));
   }
   render() {
     console.log(this.props);
   	return ( 
   	  <div>
-        <h3>{this.props.user.name}, Age: {this.props.user.age}</h3>
+        <h2>{this.props.user.name}</h2>
+        <h3>Would-be age now = {this.props.user.age}</h3>
       </div>
   	);
   }

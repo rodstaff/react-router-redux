@@ -6,7 +6,7 @@ import store from '../dev/js/store'
 export const User = () => (
   <div>
     <br />
-    <h1>Welcome to the User Page</h1>
+    <h1>This is the User Page</h1>
     <Usera store={store}/>
   </div>
 )
