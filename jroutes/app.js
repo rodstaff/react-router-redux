@@ -21,7 +21,7 @@ export default class App extends React.Component {
 
           <IndexRoute component={Home} />
           <Route path='user' component={User} />  
-          <Route path='/tweets(/:name)' component={Tweets} />
+          <Route path='tweets(/:name)' component={Tweets} />
           <Route path='*' component={NotFound} />
 
         </Route>
